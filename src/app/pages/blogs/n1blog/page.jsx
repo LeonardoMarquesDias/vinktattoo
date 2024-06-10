@@ -75,7 +75,7 @@ export default function N1blog() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-4">
-        <div className="-mt-12">
+        <div className="sm:-mt-12 lg:-mt-12">
           <Header navigation={navigation} />
           <TitleSection
             title="Complete Guide for Beginners"

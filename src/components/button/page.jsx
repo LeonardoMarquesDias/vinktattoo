@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 const people = [
   {
-    name: 'Jane Cooper',
+    name: 'Vinicios Cappobianco',
     title: 'Request a quick and free quote via Instagram or WhatsApp and book your new tattoo',
     address: '199 Rodbourne Rd, Swindon SN2 2AA',
-    email: 'janecooper@example.com',
-    telephone: '+1-202-555-0170',
+    whatsapp: '',
+    telephone: '0745213254',
     imageUrl: '/hero.jpg',
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -58,7 +58,7 @@ export default function Button() {
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-10 overflow-y-auto">
+          <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
               <Transition.Child
                 as={Fragment}
@@ -102,13 +102,13 @@ export default function Button() {
                           <div>
                             <div className="flex divide-x divide-gray-950">
                             <div className="flex w-0 flex-1 bg-green-600 rounded-bl-md">
-                                <a
+                                <Link
                                   href={`mailto:${person.email}`}
                                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-md border border-transparent py-4 text-sm font-semibold text-gray-100"
                                 >
                                   <EnvelopeIcon className="h-5 w-5 text-green-800" aria-hidden="true" />
                                   WhatsApp
-                                </a>
+                                </Link>
                               </div>
                               <div className="flex w-0 flex-1">
                                 <a

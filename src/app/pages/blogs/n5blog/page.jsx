@@ -87,7 +87,7 @@ export default function N5blog() {
         />
       </div>
       <div className="mx-auto max-w-7xl mb-20 px-6 lg:px-8">
-        <div className="-mt-12">
+        <div className="sm:-mt-12 lg:-mt-12">
           <Header navigation={navigation} />
           <TitleSection
             title="Is It Possible to Remove a Tattoo?"

@@ -5,8 +5,8 @@ import { TitleSection } from '../titleSection/page';
 export default function CarouselVideos() {
 
   const videos = [
-    {id: 1, videoSrc: '/videos/1.mp4' },
-    {id: 2, videoSrc: '' },
+    {id: 1, videoSrc: '/videos/0.mp4' },
+    {id: 2, videoSrc: '/videos/2.mp4' },
     {id: 3, videoSrc: '/videos/3.mp4' },
     {id: 4, videoSrc: '/videos/4.mp4' },
     {id: 5, videoSrc: '/videos/5.mp4' },

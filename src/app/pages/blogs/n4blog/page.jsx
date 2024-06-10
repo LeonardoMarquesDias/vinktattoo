@@ -67,7 +67,7 @@ export default function N4blog() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-4">
-        <div className="-mt-12">
+        <div className="sm:-mt-12 lg:-mt-12">
           <Header navigation={navigation} />
           <TitleSection
             title="Essential Tips for Choosing Your Tattoo Design"

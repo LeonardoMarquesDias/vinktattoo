@@ -66,7 +66,7 @@ export default function Blog() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 lg:max-w-7xl">
-      <div className="-mt-12">
+      <div className="sm:-mt-12 lg:-mt-12">
         <Header navigation={navigation} />
         <TitleSection
           title="Tattoo Universe Blog"
