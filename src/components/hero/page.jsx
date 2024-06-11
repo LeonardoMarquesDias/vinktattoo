@@ -34,11 +34,11 @@ export default function Home() {
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="mb-10 flex">
                   <div className="inline-flex items-center rounded-full bg-gold-200/10 px-3 py-1 text-sm font-semibold leading-6 text-gold-500 ring-1 ring-inset ring-gold-800/20">
-                    Vinicios Capobianco
-                    <Link href="#" className="flex pl-2 text-gray-100 cursor-pointer">
+                    <Link href="#" className="flex pr-1 text-gray-100 cursor-pointer">
                       <MapPinIcon className="w-4 mr-1" /> 
                       <span>Swindon</span> 
                     </Link> 
+                    - Vinicios Capobianco
                   </div>
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-900 sm:text-6xl">
