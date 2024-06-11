@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from 'react';
 import { TitleSection } from '../titleSection/page';
 
 export default function CarouselVideos() {
@@ -13,6 +14,13 @@ export default function CarouselVideos() {
     {id: 6, videoSrc: '/videos/6.mp4' },
     {id: 7, videoSrc: '/videos/7.mp4' },
   ];
+
+  useEffect(() => {
+    const videoElements = document.querySelectorAll('video');
+    videoElements.forEach((video) => {
+      video.play();
+    });
+  }, []);
 
   return (
     <section className="relative max-w-7xl mx-auto px-4">
@@ -30,7 +38,7 @@ export default function CarouselVideos() {
                 alt="Tattoo Video"
                 loop
                 muted
-                autoPlay
+                playsInline
                 className="w-full h-full object-cover hover:opacity-75"
               />
             </div>
