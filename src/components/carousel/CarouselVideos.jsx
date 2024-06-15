@@ -23,16 +23,13 @@ export default function CarouselVideos() {
         entries.forEach(entry => {
           const video = entry.target;
           if (entry.isIntersecting) {
-            if (!video.src) {
-              video.src = video.dataset.src;
-            }
             video.play();
           } else {
             video.pause();
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 } 
     );
 
     videoRefs.current.forEach(video => {
@@ -63,8 +60,8 @@ export default function CarouselVideos() {
             <div className="relative h-[28rem] w-[20rem]">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
-                data-src={video.videoSrc}
-                preload="metadata"
+                src={video.videoSrc}  
+                preload="auto"        
                 loop
                 muted
                 playsInline
