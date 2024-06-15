@@ -22,7 +22,7 @@ export default function Blog() {
       title: 'Complete Guide for Beginners',
       description: 'Everything you need to know before getting your first tattoo',
       href: '/pages/blogs/n1blog',
-      imageSrc: '/n1blog.webp',
+      imageSrc: '/images/blogs/n1blog.webp',
       imageAlt: '',
     },
     {
@@ -30,7 +30,7 @@ export default function Blog() {
       title: 'Tattoo Trends for 2024 and 2025',
       description: 'What is hot in the tattoo world',
       href: '/pages/blogs/n2blog',
-      imageSrc: '/n2blog.webp',
+      imageSrc: '/images/blogs/n2blog.webp',
       imageAlt: '',
     },
     {
@@ -38,7 +38,7 @@ export default function Blog() {
       title: 'Is It Possible to Remove a Tattoo?',
       description: 'Learn everything about the most effective method of tattoo removal: Laser tattoo removal.',
       href: '/pages/blogs/n5blog',
-      imageSrc: '/n5blog.webp',
+      imageSrc: '/images/blogs/n5blog.webp',
       imageAlt: '',
     },
     {
@@ -46,7 +46,7 @@ export default function Blog() {
       title: 'Covering Scars with Tattoos',
       description: 'Learn how to turn your scars into beautiful tattoos with expert tips and insights.',
       href: '/pages/blogs/n3blog',
-      imageSrc: '/n4blog.webp',
+      imageSrc: '/images/blogs/n4blog.webp',
       imageAlt: '',
     },
     {
@@ -54,7 +54,7 @@ export default function Blog() {
       title: 'Pain-Free Tattoos',
       description: 'Discover the methods to achieve a pain-free tattooing experience, with a focus on the effectiveness of anesthetic creams.',
       href: '/pages/blogs/n6blog',
-      imageSrc: '/n6blog.webp',
+      imageSrc: '/images/blogs/n6blog.webp',
       imageAlt: '',
     },
     {
@@ -62,7 +62,7 @@ export default function Blog() {
       title: 'Essential Tips for Choosing Your Tattoo Design',
       description: 'Advice on how to select a tattoo design that has personal meaning, considering size, placement, and finding inspiration from different sources.',
       href: '/pages/blogs/n4blog',
-      imageSrc: '/n3blog.webp',
+      imageSrc: '/images/blogs/n3blog.webp',
       imageAlt: '',
     },
   ];
