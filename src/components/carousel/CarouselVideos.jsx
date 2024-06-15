@@ -6,13 +6,13 @@ import { TitleSection } from '../titleSection/page';
 export default function CarouselVideos() {
 
   const videos = [
-    {id: 1, videoSrc: '/videos/0.mp4' },
-    {id: 2, videoSrc: '/videos/2.mp4' },
-    {id: 3, videoSrc: '/videos/3.mp4' },
-    {id: 4, videoSrc: '/videos/4.mp4' },
-    {id: 5, videoSrc: '/videos/5.mp4' },
-    {id: 6, videoSrc: '/videos/6.mp4' },
-    {id: 7, videoSrc: '/videos/7.mp4' },
+    { id: 1, videoSrc: '/videos/0.mp4' },
+    { id: 2, videoSrc: '/videos/2.mp4' },
+    { id: 3, videoSrc: '/videos/3.mp4' },
+    { id: 4, videoSrc: '/videos/4.mp4' },
+    { id: 5, videoSrc: '/videos/5.mp4' },
+    { id: 6, videoSrc: '/videos/6.mp4' },
+    { id: 7, videoSrc: '/videos/7.mp4' },
   ];
 
   const videoRefs = useRef([]);
@@ -23,13 +23,16 @@ export default function CarouselVideos() {
         entries.forEach(entry => {
           const video = entry.target;
           if (entry.isIntersecting) {
+            if (!video.src) {
+              video.src = video.dataset.src;
+            }
             video.play();
           } else {
             video.pause();
           }
         });
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
 
     videoRefs.current.forEach(video => {
@@ -50,7 +53,7 @@ export default function CarouselVideos() {
   return (
     <section className="relative max-w-7xl mx-auto px-4">
       <TitleSection
-        title="Video Gallery" 
+        title="Video Gallery"
         subtitle="Watch our tattoo designs from all angles in motion"
       />
 
@@ -60,8 +63,8 @@ export default function CarouselVideos() {
             <div className="relative h-[28rem] w-[20rem]">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
-                src={video.videoSrc}
-                preload="auto"
+                data-src={video.videoSrc}
+                preload="metadata"
                 loop
                 muted
                 playsInline
