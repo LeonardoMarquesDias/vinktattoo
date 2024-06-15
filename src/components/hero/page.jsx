@@ -49,7 +49,7 @@ export default function Home() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Button />
-                  <Link href="#" className="text-sm font-semibold leading-6 text-gray-100">
+                  <Link href="#about" className="text-sm font-semibold leading-6 text-gray-100">
                     Learn more <span aria-hidden="true">→</span>
                   </Link>
                 </div>
