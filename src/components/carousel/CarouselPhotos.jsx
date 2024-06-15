@@ -5,27 +5,27 @@ import { TitleSection } from '../titleSection/page';
 
 export default function CarouselPhotos() {
   const images = [
-    { id: 1, imageSrc: '/images/1.jpg' },
-    { id: 2, imageSrc: '/images/2.jpg' },
-    { id: 3, imageSrc: '/images/3.jpg' },
-    { id: 4, imageSrc: '/images/4.jpg' },
-    { id: 5, imageSrc: '/images/5.jpg' },
-    { id: 6, imageSrc: '/images/6.jpg' },
-    { id: 7, imageSrc: '/images/7.jpg' },
-    { id: 8, imageSrc: '/images/8.jpg' },
-    { id: 9, imageSrc: '/images/9.jpg' },
-    { id: 10, imageSrc: '/images/10.jpg' },
-    { id: 11, imageSrc: '/images/11.jpg' },
-    { id: 12, imageSrc: '/images/12.jpg' },
-    { id: 13, imageSrc: '/images/13.jpg' },
-    { id: 14, imageSrc: '/images/14.jpg' },
-    { id: 15, imageSrc: '/images/15.jpg' },
-    { id: 16, imageSrc: '/images/16.jpg' },
-    { id: 17, imageSrc: '/images/17.jpg' },
-    { id: 18, imageSrc: '/images/18.jpg' },
-    { id: 19, imageSrc: '/images/19.jpg' },
-    { id: 20, imageSrc: '/images/20.jpg' },
-    { id: 21, imageSrc: '/images/21.jpg' },
+    { id: 1, imageSrc: '/images/tattos/1.jpg' },
+    { id: 2, imageSrc: '/images/tattos/2.jpg' },
+    { id: 3, imageSrc: '/images/tattos/3.jpg' },
+    { id: 4, imageSrc: '/images/tattos/4.jpg' },
+    { id: 5, imageSrc: '/images/tattos/5.jpg' },
+    { id: 6, imageSrc: '/images/tattos/6.jpg' },
+    { id: 7, imageSrc: '/images/tattos/7.jpg' },
+    { id: 8, imageSrc: '/images/tattos/8.jpg' },
+    { id: 9, imageSrc: '/images/tattos/9.jpg' },
+    { id: 10, imageSrc: '/images/tattos/10.jpg' },
+    { id: 11, imageSrc: '/images/tattos/11.jpg' },
+    { id: 12, imageSrc: '/images/tattos/12.jpg' },
+    { id: 13, imageSrc: '/images/tattos/13.jpg' },
+    { id: 14, imageSrc: '/images/tattos/14.jpg' },
+    { id: 15, imageSrc: '/images/tattos/15.jpg' },
+    { id: 16, imageSrc: '/images/tattos/16.jpg' },
+    { id: 17, imageSrc: '/images/tattos/17.jpg' },
+    { id: 18, imageSrc: '/images/tattos/18.jpg' },
+    { id: 19, imageSrc: '/images/tattos/19.jpg' },
+    { id: 20, imageSrc: '/images/tattos/20.jpg' },
+    { id: 21, imageSrc: '/images/tattos/21.jpg' },
   ];
 
   return (
@@ -42,6 +42,9 @@ export default function CarouselPhotos() {
                 src={Images.imageSrc}
                 alt="Tattoo Image"
                 fill
+                sizes="(max-width: 768px) 100vw, 
+                       (max-width: 1200px) 50vw, 
+                       33vw"
                 style={{ objectFit: 'cover' }}
                 className="w-full h-full object-cover hover:opacity-75"
                 priority

@@ -75,9 +75,9 @@ export default function Button() {
                       Contact Information
                     </Dialog.Title>
                     <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 mt-4">
-                      {people.map((person) => (
+                      {people.map((person, index) => (
                         <li
-                          key={person.email}
+                          key={index}
                           className="col-span-1 flex flex-col divide-y divide-gray-950 rounded-lg bg-gray-900 text-center shadow"
                         >
                           <div className="flex flex-1 flex-col p-6">
@@ -101,7 +101,7 @@ export default function Button() {
                           </div>
                           <div>
                             <div className="flex divide-x divide-gray-950">
-                            <div className="flex w-0 flex-1 bg-green-600 rounded-bl-md">
+                              <div className="flex w-0 flex-1 bg-green-600 rounded-bl-md">
                                 <Link
                                   href={`mailto:${person.email}`}
                                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-md border border-transparent py-4 text-sm font-semibold text-gray-100"

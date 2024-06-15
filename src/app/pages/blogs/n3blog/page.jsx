@@ -1,12 +1,11 @@
+"use client"
+
+import Image from "next/image";
+
 import Header from "@/components/header/page";
 import Cta from '@/components/cta/Cta';
 import Footer from '@/components/footer/Footer';
 import { TitleSection } from '@/components/titleSection/page';
-
-export const metadata = {
-  title: "",
-  description: "",
-};
 
 export default function N3blog() {
   const navigation = [
@@ -95,10 +94,12 @@ export default function N3blog() {
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
-                <img
+                <Image
                   src="/hero.jpg"
-                  alt=""
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  alt="Tattoo Artist Vinicios Capobianco"
+                  width={40}
+                  height={40}
+                  className="mt-1 h-10 w-10 flex-none rounded-full"
                 />
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gold-800">Vinicios Capobianco</div>
@@ -109,10 +110,12 @@ export default function N3blog() {
           </div>
           <div className="max-w-xl text-base leading-7 text-gray-400 lg:col-span-7">
             <figure className="mt-16">
-              <img
-                className="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="/n3blog.webp"
-                alt=""
+              <Image
+                className="rounded-xl"
+                src="/images/blogs/n4blog.webp"
+                alt="Tattoo Guide Image"
+                width={1280}
+                height={720}
               />
             </figure>
             <article>

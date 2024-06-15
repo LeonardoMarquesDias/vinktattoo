@@ -1,14 +1,11 @@
+"use client"
+
 import Image from 'next/image'; 
 
 import Header from "@/components/header/page";
 import Cta from '@/components/cta/Cta';
 import Footer from '@/components/footer/Footer';
 import { TitleSection } from '@/components/titleSection/page';
-
-export const metadata = {
-  title: "",
-  description: "",
-};
 
 export default function N5blog() {
   const navigation = [
@@ -124,7 +121,7 @@ export default function N5blog() {
                   alt=""
                   width={40}
                   height={40}
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 h-10 w-10 flex-none rounded-full"
                 />
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gold-800">Vinicios Capobianco</div>
@@ -136,8 +133,8 @@ export default function N5blog() {
           <div className="max-w-xl text-base leading-7 text-gray-400 lg:col-span-7">
             <figure className="mt-16">
               <Image
-                className="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="/n5blog.webp"
+                className="rounded-xl bg-gray-50"
+                src="/images/blogs/n5blog.webp"
                 alt=""
                 width={1280}
                 height={720}

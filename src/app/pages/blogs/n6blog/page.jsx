@@ -1,14 +1,11 @@
+"use client"
+
 import Image from 'next/image'; 
 
 import Header from "@/components/header/page";
 import Cta from '@/components/cta/Cta';
 import Footer from '@/components/footer/Footer';
 import { TitleSection } from '@/components/titleSection/page';
-
-export const metadata = {
-  title: "",
-  description: "",
-};
 
 export default function N6blog() {
   const navigation = [
@@ -106,11 +103,11 @@ export default function N6blog() {
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
                 <Image
-                  src="/moises.png"
+                  src="/hero.jpg"
                   alt=""
                   width={40}
                   height={40}
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 h-10 w-10 flex-none rounded-full"
                 />
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gold-800">Vinicios Capobianco</div>
@@ -122,8 +119,8 @@ export default function N6blog() {
           <div className="max-w-xl text-base leading-7 text-gray-400 lg:col-span-7">
             <figure className="mt-16">
               <Image
-                className="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="/hero.jpg"
+                className="rounded-xl"
+                src="/images/blogs/n6blog.webp"
                 alt=""
                 width={1280}
                 height={720}

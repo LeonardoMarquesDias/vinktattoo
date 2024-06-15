@@ -7,8 +7,8 @@ import Button from '../button/page';
 
 export default function GoogleMaps() {
   const center = {
-    lat: 51.555060844194486,
-    lng: -1.798887529203211,
+    lat: 51.563110051882845,
+    lng: -1.7998412212903825,
   };
 
   return (

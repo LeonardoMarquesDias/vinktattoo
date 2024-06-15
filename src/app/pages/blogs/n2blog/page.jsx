@@ -1,14 +1,11 @@
+"use client"
+
 import Image from 'next/image';
 
 import Header from "@/components/header/page";
 import Cta from '@/components/cta/Cta';
 import Footer from '@/components/footer/Footer';
 import { TitleSection } from '@/components/titleSection/page';
-
-export const metadata = {
-  title: "",
-  description: "",
-};
 
 export default function N1blog() {
   const navigation = [
@@ -17,37 +14,37 @@ export default function N1blog() {
     { name: 'Gallery', href: '/#gallery' },
     { name: 'Blog', href: '/pages/blogs/blogpage' },
     { name: 'Contact', href: '/#contact' },
-  ]  
+  ];  
   const sections = [
     {
       title: 'Realism on the Rise',
       items: [
         'Hyper-realistic Tattoos: Tattoos that mimic photographs are expected to remain popular in 2024 and 2025. Artists are perfecting their techniques to create images that seem to leap off the skin.',
         'Portraits: With the improvement of tattoo artists’ skills, realistic portraits of loved ones, celebrities, and pets are becoming even more impressive.',
-      ]
+      ],
     },
     {
       title: 'Minimalism and Fine Lines',
       items: [
         'Simple Designs: Minimalist tattoos with fine lines and simplified designs continue to be a popular choice, especially among those who prefer something discreet.',
         'Geometry and Symbolism: Geometric and symbolic tattoos, often in black and white, are a growing trend for those seeking meaning and style in a small design.',
-      ]
+      ],
     },
     {
       title: 'Colorful Tattoos',
       items: [
         'Watercolor: The watercolor technique continues to enchant with its vibrant colors and fluid effects, creating unique pieces of art.',
         'Neo Traditional: A style that combines the traditional with a vivid color palette, becoming a strong trend in the coming years.',
-      ]
+      ],
     },
     {
       title: 'Mixing Styles',
       items: [
         'Combination of Techniques: Artists are increasingly mixing different styles and techniques to create unique and personalized tattoos.',
         'Surrealistic Tattoos: Combinations of realistic and fantastic elements, resulting in surreal works of art on the skin.',
-      ]
-    }
-  ]
+      ],
+    },
+  ];
 
   return (
     <div className="relative isolate overflow-hidden">
@@ -101,7 +98,7 @@ export default function N1blog() {
                   alt=""
                   width={40}
                   height={40}
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
+                  className="mt-1 h-10 w-10 flex-none rounded-full"
                 />
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gold-800">Vinicios Capobianco</div>
@@ -113,8 +110,8 @@ export default function N1blog() {
           <div className="max-w-xl text-base leading-7 text-gray-400 lg:col-span-7">
             <figure className="mt-16">
               <Image
-                className="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="/n2blog.webp"
+                className="rounded-xl"
+                src="/images/blogs/n2blog.webp"
                 alt=""
                 width={1280}
                 height={720}

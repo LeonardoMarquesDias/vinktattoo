@@ -22,8 +22,7 @@ export default function Blog() {
             <Image
               src="/n1blog.webp"
               alt="Complete Guide for Beginners"
-              layout="fill"
-              objectFit="cover"
+              fill
               className="object-cover object-center group-hover:opacity-75"
             />
             <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50" />
@@ -45,8 +44,7 @@ export default function Blog() {
             <Image
               src="/n2blog.webp"
               alt="Tattoo Trends for 2024 and 2025"
-              layout="fill"
-              objectFit="cover"
+              fill
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div
@@ -71,8 +69,7 @@ export default function Blog() {
             <Image
               src="/n3blog.webp"
               alt="Essential Tips for Choosing Your Tattoo Design"
-              layout="fill"
-              objectFit="cover"
+              fill
               className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
             />
             <div

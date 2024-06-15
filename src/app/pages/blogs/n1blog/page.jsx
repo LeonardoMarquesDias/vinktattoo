@@ -4,11 +4,6 @@ import Image from 'next/image';
 import Header from '@/components/header/page';
 import { TitleSection } from '@/components/titleSection/page';
 
-export const metadata = {
-  title: "",
-  description: "",
-};
-
 export default function N1blog() {
   const navigation = [
     { name: 'Home', href: '/' },
@@ -16,7 +11,7 @@ export default function N1blog() {
     { name: 'Gallery', href: '/#gallery' },
     { name: 'Blog', href: '/pages/blogs/blogpage' },
     { name: 'Contact', href: '/#contact' },
-  ]
+  ];
   const sections = [
     {
       title: 'Choosing a Tattoo Studio',
@@ -107,13 +102,15 @@ export default function N1blog() {
                 </p>
               </blockquote>
               <figcaption className="mt-8 flex gap-x-4">
-                <Image
-                  src="/hero.jpg"
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50"
-                />
+                <div className="mt-1 h-10 w-10 flex-none rounded-full">
+                  <Image
+                    src="/hero.jpg"
+                    alt="Tattoo Artist Vinicios Capobianco"
+                    width={40}
+                    height={40}
+                    className="mt-1 h-10 w-10 flex-none rounded-full"
+                  />
+                </div>
                 <div className="text-sm leading-6">
                   <div className="font-semibold text-gold-800">Vinicios Capobianco</div>
                   <div className="text-gray-400">Tattoo Artist</div>
@@ -124,9 +121,9 @@ export default function N1blog() {
           <div className="max-w-xl text-base leading-7 text-gray-400 lg:col-span-7">
             <figure className="mt-16">
               <Image
-                className="aspect-video rounded-xl bg-gray-50 object-cover"
-                src="/n1blog.webp"
-                alt=""
+                className="rounded-xl"
+                src="/images/blogs/n1blog.webp"
+                alt="Tattoo Guide Image"
                 width={1280}
                 height={720}
               />
@@ -157,4 +154,3 @@ export default function N1blog() {
     </div>
   );
 }
-

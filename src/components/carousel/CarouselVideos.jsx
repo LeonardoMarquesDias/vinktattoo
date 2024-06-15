@@ -39,7 +39,7 @@ export default function CarouselVideos() {
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-cover hover:opacity-75"
+                className="aspect-video w-full h-full object-cover hover:opacity-75"
               />
             </div>
           </div>

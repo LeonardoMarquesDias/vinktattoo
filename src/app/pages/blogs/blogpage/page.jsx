@@ -1,18 +1,21 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import Cta from "@/components/cta/Cta";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/page";
-import { TitleSection } from "@/components/titleSection/page";
+"use client";
+
+import Link from 'next/link';
+import Image from 'next/image';
+import Cta from '@/components/cta/Cta';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/page';
+import { TitleSection } from '@/components/titleSection/page';
 
 export default function Blog() {
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Gallery', href: '/#gallery' },
-    { name: 'Blog', href: '/pages/blogs/blogpage' },
-    { name: 'Contact', href: '/#contact' },
-  ]
+    { id: '1', name: 'Home', href: '/' },
+    { id: '2', name: 'About', href: '/#about' },
+    { id: '3', name: 'Gallery', href: '/#gallery' },
+    { id: '4', name: 'Blog', href: '/pages/blogs/blogpage' },
+    { id: '5', name: 'Contact', href: '/#contact' },
+  ];
+
   const articles = [
     {
       id: 1,
@@ -62,7 +65,7 @@ export default function Blog() {
       imageSrc: '/n3blog.webp',
       imageAlt: '',
     },
-  ]
+  ];
 
   return (
     <div className="mx-auto max-w-2xl px-4 lg:max-w-7xl">
@@ -77,7 +80,14 @@ export default function Blog() {
         {articles.map((article) => (
           <div key={article.id} className="group relative">
             <div className="aspect-h-3 aspect-w-4 overflow-hidden rounded-lg bg-gray-100">
-              <Image src={article.imageSrc} alt={article.imageAlt} className="object-cover object-center" layout="fill" />
+              <Image
+                src={article.imageSrc}
+                alt={article.imageAlt}
+                className="object-cover object-center"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
               <div className="flex items-end p-4 opacity-0 group-hover:opacity-100" aria-hidden="true">
                 <div className="w-full rounded-md bg-gold-500 bg-opacity-75 px-4 py-2 text-center text-sm font-medium text-gray-900 backdrop-blur backdrop-filter">
                   Read the Blog
@@ -99,5 +109,5 @@ export default function Blog() {
       <Cta />
       <Footer />
     </div>
-  )
+  );
 }
