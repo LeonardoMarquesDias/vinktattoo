@@ -3,8 +3,8 @@
 import Image from 'next/image'; 
 
 import Header from "@/components/header/page";
-import Cta from '@/components/cta/Cta';
-import Footer from '@/components/footer/Footer';
+import Cta from '@/components/cta/page';
+import Footer from '@/components/footer/page';
 import { TitleSection } from '@/components/titleSection/page';
 
 export default function N4blog() {

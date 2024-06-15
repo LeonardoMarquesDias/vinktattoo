@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import Cta from '@/components/cta/Cta';
-import Footer from '@/components/footer/Footer';
+import Cta from '@/components/cta/page';
+import Footer from '@/components/footer/page';
 import Header from '@/components/header/page';
 import { TitleSection } from '@/components/titleSection/page';
 
