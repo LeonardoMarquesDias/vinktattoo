@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import { TitleSection } from '../titleSection/page';
 
 export default function CarouselVideos() {
-
   const videos = [
     { id: 1, videoSrc: '/videos/0.mp4' },
     { id: 2, videoSrc: '/videos/2.mp4' },
@@ -29,7 +28,10 @@ export default function CarouselVideos() {
           }
         });
       },
-      { threshold: 0.5 } 
+      {
+        threshold: 0.3,  // Aumentar a sensibilidade
+        rootMargin: '0px 0px -20% 0px' // Ajustar a margem para considerar o vídeo na viewport um pouco antes de entrar completamente
+      }
     );
 
     videoRefs.current.forEach(video => {
@@ -60,8 +62,8 @@ export default function CarouselVideos() {
             <div className="relative h-[28rem] w-[20rem]">
               <video
                 ref={(el) => (videoRefs.current[index] = el)}
-                src={video.videoSrc}  
-                preload="auto"        
+                src={video.videoSrc}
+                preload="auto"
                 loop
                 muted
                 playsInline
@@ -72,5 +74,5 @@ export default function CarouselVideos() {
         ))}
       </div>
     </section>
-  )
+  );
 }
