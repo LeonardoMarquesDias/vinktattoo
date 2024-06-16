@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 const people = [
   {
-    name: 'Vinicios Cappobianco',
-    title: 'Request a quick and free quote via Instagram or WhatsApp and book your new tattoo',
+    name: 'Vinicios Capobianco',
+    title: 'Get in touch with me easily and directly via WhatsApp or Instagram for a free custom consultation and quote.',
     address: '199 Rodbourne Rd, Swindon SN2 2AA',
-    whatsapp: '',
+    whatsapp: '07452132541', 
     telephone: '0745213254',
     imageUrl: '/hero.jpg',
     icon: (props) => (
@@ -83,7 +83,7 @@ export default function Button() {
                           <div className="flex flex-1 flex-col p-6">
                             <img className="mx-auto h-32 w-32 flex-shrink-0 rounded-lg" src={person.imageUrl} alt="" />
                             <h3 className="mt-4 text-sm font-medium text-gold-800">{person.name}</h3>
-                            <dl className="mt-2 flex flex-grow flex-col justify-between">
+                            <dl className="mt-6 flex flex-grow flex-col justify-between">
                               <dd className="text-sm text-center text-gray-400">{person.title}</dd>
                               <dd className="mt-3">
                                 <span className="inline-flex items-center text-sm">
@@ -103,7 +103,7 @@ export default function Button() {
                             <div className="flex divide-x divide-gray-950">
                               <div className="flex w-0 flex-1 bg-green-600 rounded-bl-md">
                                 <Link
-                                  href={`mailto:${person.email}`}
+                                  href={`https://wa.me/${person.whatsapp}`}
                                   className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-md border border-transparent py-4 text-sm font-semibold text-gray-100"
                                 >
                                   <EnvelopeIcon className="h-5 w-5 text-green-800" aria-hidden="true" />
@@ -112,7 +112,7 @@ export default function Button() {
                               </div>
                               <div className="flex w-0 flex-1">
                                 <a
-                                  href={`tel:${person.telephone}`}
+                                  href={`https://instagram.com/yourinstagramhandle`}
                                   className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-100"
                                 >
                                   <svg
