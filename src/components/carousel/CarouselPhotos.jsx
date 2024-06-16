@@ -35,25 +35,22 @@ export default function CarouselPhotos() {
         subtitle="Discover my expertise, tattoo art, and client satisfaction"
       />
       <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
-        {images.map((Images) => (
-          <div key={Images.id} className="min-w-max flex-shrink-0">
+        {images.map((image) => (
+          <div key={image.id} className="min-w-max flex-shrink-0">
             <div className="relative h-[28rem] w-[20rem]">
               <Image
-                src={Images.imageSrc}
+                src={image.imageSrc}
                 alt="Tattoo Image"
                 fill
-                sizes="(max-width: 768px) 100vw, 
-                       (max-width: 1200px) 50vw, 
-                       33vw"
                 style={{ objectFit: 'cover' }}
-                className="w-full h-full object-cover hover:opacity-75"
+                className="hover:opacity-75"
                 priority
               />
             </div>
           </div>
         ))}
       </div>
-      <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden md:hidden lg:hidden xl:hidden"> 
+      <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden"> 
         Swipe
         <span aria-hidden="true"> &rarr;</span>
       </div>

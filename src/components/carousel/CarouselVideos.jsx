@@ -29,8 +29,8 @@ export default function CarouselVideos() {
         });
       },
       {
-        threshold: 0.3,  // Aumentar a sensibilidade
-        rootMargin: '0px 0px -20% 0px' // Ajustar a margem para considerar o vídeo na viewport um pouco antes de entrar completamente
+        threshold: 0.3,
+        rootMargin: '0px 0px -20% 0px',
       }
     );
 
@@ -55,7 +55,6 @@ export default function CarouselVideos() {
         title="Video Gallery"
         subtitle="Watch our tattoo designs from all angles in motion"
       />
-
       <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
         {videos.map((video, index) => (
           <div key={video.id} className="min-w-max flex-shrink-0">
@@ -67,13 +66,13 @@ export default function CarouselVideos() {
                 loop
                 muted
                 playsInline
-                className="aspect-video w-full h-full object-cover hover:opacity-75"
+                className="w-full h-full object-cover hover:opacity-75"
               />
             </div>
           </div>
         ))}
       </div>
-      <div className="text-gold-800 mt-2 text-right sm:hidden md:hidden lg:hidden xl:hidden"> 
+      <div className="text-gold-800 mt-2 text-right sm:hidden">
         Swipe
         <span aria-hidden="true"> &rarr;</span>
       </div>
