@@ -73,6 +73,9 @@ export default function CarouselVideos() {
           </div>
         ))}
       </div>
+      <div className="text-gold-800 mt-2 text-right sm:hidden md:hidden lg:hidden xl:hidden"> 
+        <span aria-hidden="true"> &rarr;</span>
+      </div>
     </section>
   );
 }
