@@ -11,6 +11,7 @@ export default function Home() {
     { name: 'Gallery', href: '/#gallery' },
     { name: 'Blog', href: '/pages/blogs/blogpage' },
     { name: 'Contact', href: '/#contact' },
+    { name: 'FAQs', href: '/#faqs' },
   ]
   
   return (

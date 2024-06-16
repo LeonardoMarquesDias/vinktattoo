@@ -42,7 +42,7 @@ const faqs = [
 
 export default function Faqs() {
   return (
-    <div className="mt-32">
+    <div className="mt-32" id="faqs">
       <div className="mx-auto max-w-7xl px-4 ">
         <div className="mx-auto max-w-4xl divide-y divide-gray-400/10">
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gold-800">Frequently asked questions</h2>

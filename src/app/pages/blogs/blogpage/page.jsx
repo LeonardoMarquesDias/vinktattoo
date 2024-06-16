@@ -14,6 +14,7 @@ export default function Blog() {
     { id: '3', name: 'Gallery', href: '/#gallery' },
     { id: '4', name: 'Blog', href: '/pages/blogs/blogpage' },
     { id: '5', name: 'Contact', href: '/#contact' },
+    { name: 'FAQs', href: '/#faqs' },
   ];
 
   const articles = [
