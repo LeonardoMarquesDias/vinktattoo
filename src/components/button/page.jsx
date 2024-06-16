@@ -111,8 +111,8 @@ export default function Button() {
                                 </Link>
                               </div>
                               <div className="flex w-0 flex-1">
-                                <a
-                                  href={`https://instagram.com/yourinstagramhandle`}
+                                <Link
+                                  href={`https://www.instagram.com/vink.tattoo23/`}
                                   className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-100"
                                 >
                                   <svg
@@ -127,7 +127,7 @@ export default function Button() {
                                     />
                                   </svg>
                                   Instagram
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>

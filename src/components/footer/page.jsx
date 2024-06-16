@@ -17,7 +17,7 @@ const footerNavigation = {
     },
     {
       name: 'Instagram',
-      href: 'https://www.instagram.com/vink.tattoo23',
+      href: 'https://www.instagram.com/vink.tattoo23/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
