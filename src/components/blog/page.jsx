@@ -7,8 +7,8 @@ export default function Blog() {
     <div>
       <div className="mx-auto max-w-7xl px-4">
         <TitleSection
-          title="Blog Articles"
-          subtitle="Discover my expertise, tattoo art, and client satisfaction"
+          title="Tattoo Universe Blog"
+          subtitle="Guides, trends, and essential tips for tattoo enthusiasts"
         />
         <div className="sm:flex sm:items-baseline sm:justify-between">
           <Link href="/pages/blogs/blogpage" className="hidden text-sm font-semibold text-gold-800 hover:text-gold-500 sm:block">

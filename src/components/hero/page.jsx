@@ -1,8 +1,6 @@
 "use client"
 
 import Link from 'next/link'
-
-import { MapPinIcon  } from '@heroicons/react/24/outline'
 import Header from '../header/page'
 import Button from '../button/page'
 
@@ -20,7 +18,7 @@ export default function Home() {
       <Header navigation={navigation} />
       <div className="relative">
         <div className="mx-auto max-w-7xl">
-          <div className="relative z-10  pt-14 lg:w-full lg:max-w-2xl">
+          <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
             <svg
               className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-gray-950 lg:block"
               viewBox="0 0 100 100"
@@ -34,18 +32,14 @@ export default function Home() {
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <div className="mb-10 flex">
                   <div className="inline-flex items-center rounded-full bg-gold-200/10 px-3 py-1 text-sm font-semibold leading-6 text-gold-500 ring-1 ring-inset ring-gold-800/20">
-                    <Link href="#" className="flex pr-1 text-gray-100 cursor-pointer">
-                      <MapPinIcon className="w-4 mr-1" /> 
-                      <span>Swindon</span> 
-                    </Link> 
-                    - Vinicios Capobianco
+                    Vink Custom Tattoo Art in Swindon
                   </div>
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-900 sm:text-6xl">
-                  Transform your ideas into permanent art
+                  Transform Your Ideas into Permanent Art
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Custom tattoos, made with passion and precision.
+                  Custom tattoos created with passion, precision, and artistry.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Button />
@@ -61,7 +55,7 @@ export default function Home() {
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
             src="/hero.jpg"
-            alt=""
+            alt="Tattoo artist at work"
           />
         </div>
       </div>

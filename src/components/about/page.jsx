@@ -2,8 +2,8 @@ import { TitleSection } from '../titleSection/page';
 import Image from 'next/image';
 
 const profile = {
-  name: 'Ricardo Cooper',
-  email: 'ricardo.cooper@example.com',
+  name: 'Vinicius Capobianco',
+  email: 'vinicius.capobianco@example.com',
   avatar: '/hero.jpg',
 }
 
@@ -11,15 +11,15 @@ export default function About() {
   return (
     <div className="mt-28 max-w-7xl mx-auto px-4 lg:-mt-28" id="about">
       <TitleSection
-        title="About" 
-        subtitle="Meet the tattoo artist"
+        title="About Vink" 
+        subtitle="Meet the Tattoo Artist"
       />
       <div className="h-32 w-full object-cover lg:h-48 bg-team-pattern bg-team-size mask-team-mask"></div>
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
           <div className="flex">
             <Image 
-              className="h-24 w-24 ring-4 rounded-lg ring-gray-600 sm:h-32 sm:w-32" 
+              className="h-24 w-24 rounded-lg sm:h-32 sm:w-32" 
               src={profile.avatar} 
               alt="Profile Image" 
               width={128} 
@@ -63,7 +63,7 @@ export default function About() {
         </svg>
         <div className="max-w-5xl xl:col-span-4 text-justify">
           <p className="mt-6 text-lg leading-8 text-gray-100">
-            With 7 years of professional experience, Ricardo Cooper is dedicated to creating stunning, custom tattoos that reflect each client's unique vision and personality. Known for exceptional attention to detail and a wide range of styles, from traditional to modern, he brings artistry and expertise to every piece. Together, we will transform your ideas into beautiful and lasting art.
+            I'm a passionate tattoo artist known for my exceptional attention to detail and custom designs that capture each client's unique vision. At the best studio in Swindon, I blend creativity and precision to create stunning tattoos that reflect your individuality. Explore my portfolio, blog, and FAQs. Let’s transform your ideas into Permanent Art
           </p>
         </div> 
       </div>

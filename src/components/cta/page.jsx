@@ -43,10 +43,10 @@ export default function Cta() {
       </div>
       <div className="mx-auto max-w-2xl text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-          Contact me for a Free Consultation
+          Get a Free Consultation and Personalized Service
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-          Book Now your new tattoo
+          Book your consultation now
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Button />
