@@ -53,7 +53,8 @@ export default function CarouselPhotos() {
           </div>
         ))}
       </div>
-      <div className="text-gold-800 mt-2 text-right sm:hidden md:hidden lg:hidden xl:hidden"> 
+      <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden md:hidden lg:hidden xl:hidden"> 
+        Swipe
         <span aria-hidden="true"> &rarr;</span>
       </div>
     </section>
