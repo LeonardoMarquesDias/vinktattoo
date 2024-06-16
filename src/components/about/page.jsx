@@ -9,7 +9,7 @@ export default function About() {
     avatar: '/hero.jpg',
   }
   
-  const footerNavigation = {
+  const socialmidia = {
     social: [
       {
         name: 'Facebook',
@@ -63,12 +63,14 @@ export default function About() {
               <h1 className="truncate text-2xl font-bold text-gold-500">{profile.name}</h1>
             </div>
           </div>
-          {footerNavigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-500 hover:text-gold-500">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+          <div className="flex mt-4 sm:mt-0 space-x-4 justify-end sm:justify-start">
+            {socialmidia.social.map((item) => (
+              <a key={item.name} href={item.href} className="text-gold-800 hover:text-gold-500">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
         <div className="mt-6 hidden min-w-0 flex-1 sm:block md:hidden">
           <h1 className="truncate text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-900">{profile.name}</h1>
