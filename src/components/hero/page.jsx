@@ -1,10 +1,12 @@
 "use client"
 
 import Link from 'next/link'
-import Header from '../header/page'
-import Button from '../button/page'
 
-export default function Home() {
+import Button from '../button/page'
+import Header from '../header/page'
+
+
+export default function Hero() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/#about' },

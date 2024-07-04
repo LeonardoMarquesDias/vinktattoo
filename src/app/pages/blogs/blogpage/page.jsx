@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
 import Link from 'next/link';
 import Image from 'next/image';
-import Cta from '@/components/cta/page';
-import Footer from '@/components/footer/page';
 import Header from '@/components/header/page';
 import { TitleSection } from '@/components/titleSection/page';
+import Cta from '@/components/cta/page';
+import Footer from '@/components/footer/page';
 
 export default function Blog() {
   const navigation = [
