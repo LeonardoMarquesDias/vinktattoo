@@ -50,31 +50,33 @@ export default function CarouselVideos() {
   }, []);
 
   return (
-    <section className="relative max-w-7xl mx-auto px-4">
+    <section className="">
       <TitleSection
         title="Video Gallery"
         subtitle="Watch our tattoo designs from all angles in motion"
       />
-      <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
-        {videos.map((video, index) => (
-          <div key={video.id} className="min-w-max flex-shrink-0">
-            <div className="relative h-[28rem] w-[20rem]">
-              <video
-                ref={(el) => (videoRefs.current[index] = el)}
-                src={video.videoSrc}
-                preload="auto"
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover hover:opacity-75"
-              />
+      <div className="relative max-w-7xl mx-auto px-4">
+        <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
+          {videos.map((video, index) => (
+            <div key={video.id} className="min-w-max flex-shrink-0">
+              <div className="relative h-[28rem] w-[20rem]">
+                <video
+                  ref={(el) => (videoRefs.current[index] = el)}
+                  src={video.videoSrc}
+                  preload="auto"
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover hover:opacity-75"
+                />
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="text-gold-800 mt-2 text-right sm:hidden">
-        Swipe
-        <span aria-hidden="true"> &rarr;</span>
+          ))}
+        </div>
+        <div className="text-gold-800 mt-2 text-right sm:hidden">
+          Swipe
+          <span aria-hidden="true"> &rarr;</span>
+        </div>
       </div>
     </section>
   );

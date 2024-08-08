@@ -29,30 +29,32 @@ export default function CarouselPhotos() {
   ];
 
   return (
-    <section className="relative max-w-7xl mx-auto px-4" id="gallery">
+    <section className="" id="gallery">
       <TitleSection
         title="Photo Gallery"
         subtitle="Discover my expertise, tattoo art, and client satisfaction"
       />
-      <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
-        {images.map((image) => (
-          <div key={image.id} className="min-w-max flex-shrink-0">
-            <div className="relative h-[28rem] w-[20rem]">
-              <Image
-                src={image.imageSrc}
-                alt="Tattoo Image"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="hover:opacity-75"
-                priority
-              />
+      <div className="relative max-w-7xl mx-auto px-4">
+        <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
+          {images.map((image) => (
+            <div key={image.id} className="min-w-max flex-shrink-0">
+              <div className="relative h-[28rem] w-[20rem]">
+                <Image
+                  src={image.imageSrc}
+                  alt="Tattoo Image"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="hover:opacity-75"
+                  priority
+                />
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden"> 
-        Swipe
-        <span aria-hidden="true"> &rarr;</span>
+          ))}
+        </div>
+        <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden"> 
+          Swipe
+          <span aria-hidden="true"> &rarr;</span>
+        </div>
       </div>
     </section>
   );

@@ -33,48 +33,50 @@ export default function Blog() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4">
+    <div>
       <TitleSection
         title="Tattoo Universe Blog"
         subtitle="Guides, trends, and essential tips for tattoo enthusiasts"
       />
-      <div className="sm:flex sm:items-baseline sm:justify-between">
-        <Link href="/pages/blogs/blogpage" className="hidden text-sm font-semibold text-gold-800 hover:text-gold-500 sm:block">
-          See all blog
-          <span aria-hidden="true"> &rarr;</span>
-        </Link>
-      </div>
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="sm:flex sm:items-baseline sm:justify-between">
+          <Link href="/pages/blogs/blogpage" className="hidden text-sm font-semibold text-gold-800 hover:text-gold-500 sm:block">
+            See all blog
+            <span aria-hidden="true"> &rarr;</span>
+          </Link>
+        </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
-        {blogPosts.map((post) => (
-          <div key={post.id} className={`group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg ${post.aspectClass}`}>
-            <img
-              src={post.src}
-              alt={post.alt}
-              className="object-cover object-center group-hover:opacity-75 w-full h-full"
-            />
-            <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
-            <div className="flex items-end p-6 sm:absolute sm:inset-0">
-              <div className="bg-black bg-opacity-50 shadow-xl w-full p-4 rounded">
-                <h3 className="font-semibold text-gold-500 text-shadow-black">
-                  <Link href={post.link}>
-                    <span className="absolute inset-0" />
-                    {post.title}
-                  </Link>
-                </h3>
-                <p aria-hidden="true" className="mt-1 text-sm text-white text-shadow-black">
-                  {post.description}
-                </p>
+        <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
+          {blogPosts.map((post) => (
+            <div key={post.id} className={`group aspect-h-1 aspect-w-2 overflow-hidden rounded-lg ${post.aspectClass}`}>
+              <img
+                src={post.src}
+                alt={post.alt}
+                className="object-cover object-center group-hover:opacity-75 w-full h-full"
+              />
+              <div aria-hidden="true" className="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
+              <div className="flex items-end p-6 sm:absolute sm:inset-0">
+                <div className="bg-black bg-opacity-50 shadow-xl w-full p-4 rounded">
+                  <h3 className="font-semibold text-gold-500 text-shadow-black">
+                    <Link href={post.link}>
+                      <span className="absolute inset-0" />
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p aria-hidden="true" className="mt-1 text-sm text-white text-shadow-black">
+                    {post.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="mt-6 sm:hidden">
-        <Link href="/pages/blogs/blogpage" className="block text-sm font-semibold text-gold-800 hover:text-gold-500">
-          See all blog
-          <span aria-hidden="true"> &rarr;</span>
-        </Link>
+          ))}
+        </div>
+        <div className="mt-6 sm:hidden">
+          <Link href="/pages/blogs/blogpage" className="block text-sm font-semibold text-gold-800 hover:text-gold-500">
+            See all blog
+            <span aria-hidden="true"> &rarr;</span>
+          </Link>
+        </div>
       </div>
     </div>
   );

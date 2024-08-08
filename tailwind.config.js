@@ -30,7 +30,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'team-pattern': "linear-gradient(to right, #d9d92822 1px, transparent 1px), linear-gradient(to bottom, #121205 1px, transparent 1px)",
+        'team-pattern': "linear-gradient(to right, #d9d92822 1px, transparent 1px), linear-gradient(to bottom, #121205 1px, transparent 16px)",
       },
       backgroundSize: {
         'team-size': '14px 24px',

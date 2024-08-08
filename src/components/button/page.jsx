@@ -35,7 +35,7 @@ export default function Button() {
   };
 
   return (
-    <div className="z-99">
+    <div className="">
       <button
         type="button"
         className="rounded-md bg-button-100 px-3.5 py-2.5 text-sm font-semibold text-gray-950 shadow-sm hover:bg-button-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-200"
@@ -45,7 +45,7 @@ export default function Button() {
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-20" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
