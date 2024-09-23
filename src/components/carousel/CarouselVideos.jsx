@@ -50,7 +50,7 @@ export default function CarouselVideos() {
   }, []);
 
   return (
-    <section className="">
+    <section className="pb-20">
       <TitleSection
         title="Video Gallery"
         subtitle="Watch our tattoo designs from all angles in motion"

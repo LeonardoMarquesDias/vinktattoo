@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from 'react';
 import Image from 'next/image';
 import { TitleSection } from '../titleSection/page';
 
@@ -28,32 +29,48 @@ export default function CarouselPhotos() {
     { id: 21, imageSrc: '/images/tattos/21.jpg' },
   ];
 
+  const containerRef = useRef(null);
+
+  const handleSwipeClick = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="" id="gallery">
+    <section className="pb-20" id="gallery">
       <TitleSection
         title="Photo Gallery"
         subtitle="Discover my expertise, tattoo art, and client satisfaction"
       />
       <div className="relative max-w-7xl mx-auto px-4">
-        <div className="flex space-x-3 overflow-x-auto scrollbar-custom">
-          {images.map((image) => (
-            <div key={image.id} className="min-w-max flex-shrink-0">
-              <div className="relative h-[28rem] w-[20rem]">
-                <Image
-                  src={image.imageSrc}
-                  alt="Tattoo Image"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  className="hover:opacity-75"
-                  priority
-                />
+        <div className="relative">
+          <div
+            ref={containerRef}
+            className="flex space-x-3 overflow-x-auto scrollbar-custom"
+          >
+            {images.map((image) => (
+              <div key={image.id} className="min-w-max flex-shrink-0">
+                <div className="relative h-[28rem] w-[20rem]">
+                  <Image
+                    src={image.imageSrc}
+                    alt="Tattoo Image"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className="hover:opacity-75"
+                    priority
+                  />
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden"> 
-          Swipe
-          <span aria-hidden="true"> &rarr;</span>
+            ))}
+          </div>
+          <div
+            onClick={handleSwipeClick}
+            className="flex-col-reverse text-gold-800 mt-2 text-right sm:hidden cursor-pointer"
+          >
+            Swipe
+            <span aria-hidden="true"> &rarr;</span>
+          </div>
         </div>
       </div>
     </section>

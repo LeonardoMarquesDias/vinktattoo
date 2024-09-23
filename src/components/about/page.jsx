@@ -39,6 +39,7 @@ export default function About() {
 
   return (
     <div className="" id="about">
+      <div className="absolute bottom-0 inset-x-0 h-[10%] bg-gradient-to-t from-gray-950 z-0" />
       <TitleSection 
         title="About Vink" 
         subtitle="Meet the Tattoo Artist" 
